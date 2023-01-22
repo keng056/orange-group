@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+h2 {
+	font-size:12px;
+	line-height: 2.0;
+	margin:0px 20px 20px;
+	padding-bottom:5px;
+	border-bottom:1px solid #f06c29;
+}
+
+h2 span {
+	color:#F06B29;
+}
+hr {
+	border: 0;
+    height: 1px;
+    background:#9B9B9B;
+	margin:0 auto;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+.clearfix {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+a {
+	color: #0066cb;
+	text-decoration:none;
+}
+
+a img {
+box-shadow: #000 0 0 0;
+}
+
+a:link {
+	color: #0066cb;
+}
+a:visited {
+	color: #0066cb;
+}
+a:active {
+	color: #3399CC;
+}
+a:hover {
+	color: #3399CC;
+}
+
+li{list-style:none}
+
+input {
+	vertical-align: baseline;
+}
+img {
+	border-style: none;
+	vertical-align: bottom;
+	box-shadow: #000 0 0 0;
+}
+
+
+
+
+
+/* ページトップ */
+
+#page-top {
+	position: fixed;
+	bottom: 80px;
+	right: 10px;
+	font-size: 0.7em !important;
+	clear:both;
+}
+#page-top a {
+	background:#F06B28;
+	text-decoration: none;
+	color:#ffffff;
+	width: 60px;
+	padding: 20px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+}
+#page-top a:hover {
+	text-decoration: none;
+	background:#F2AB02;
+	color:#FFF;
+}
+
+ 
+ #fadein {
+	 margin-bottom:20px;
+ }
+ 
+
+.og_subtit {
+	margin:10px 52px 10px;
+	color:#555;
+	/*font-size:14px;*/
+	border-bottom:1px #ccc solid;
+	text-indent:8px;
+	line-height:2.0;
+	}
+
+.og_table {
+	border-collapse:collapse;
+	margin:30px 80px;
+	width:760px;
+}
+
+.og_table th {
+	/*font-weight:normal;*/
+	/*background:#ededed;*/
+	width:160px;
+	text-align:left;	
+}
+
+.og_table td,.og_table th {
+	font-size:12px;
+	line-height:2.0;
+	padding:10px;
+	color:#555;
+	border-bottom:1px dotted #CCC;
+}
+
+.support_table {
+	border-collapse:collapse;
+	margin:30px 80px;
+	width:760px;
+}
+
+
+.support_table th,td {
+	padding:15px 10px;
+}
+
+.support_table td {
+	font-size:12px;
+	line-height:1.6;
+}
+
+
+.support_table h4 {
+	font-size:16px;
+	margin:0 0 5px 0;
+	padding:0;
+	color:#666;
+}
+
+.support_table h4 span{
+	font-size:14px;
+	color:#f06c29 !important;
+}
+
+/*ページ内リンク*/
+div#pagelink {
+	border: none;
+	text-align: center;
+	font-weight: normal;
+	letter-spacing: 2px;
+	margin: 30px 0px 50px;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+div#pagelink h2{
+	width:885px;
+	height:40px;
+	border: none;
+	line-height:4.0;
+	letter-spacing: 2px;
+	font-size:14px !important;
+	font-weight: normal;
+}
+
+div#pagelink a {
+	color:#333;
+	text-decoration:none;
+}
+
+div#pagelink a:hover {
+	color:#F06C29;
+}

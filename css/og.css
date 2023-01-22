@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*ヘッダー*/
+div#header h1 {
+	margin: 33px 0 0 15px;
+	float: left;
+	width: 262px;
+	height:32px;
+	background-image:url(../img/logo.png);
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	
+	
+}
+
+ul#header_menu {
+	float: left;
+	width: 548px;
+	margin: 40px 0 0 375px;
+	padding: 0;
+}
+
+
+@media screen and (max-width:800px) {
+	ul#header_menu {
+		float: left;
+		width: 548px;
+		margin: 40px 0 0 0;
+		padding: 0;
+	}
+}
+	
+
+
+/*SHOPLIST*/
+#shoplist {
+	padding:0px 34px;
+}
+
+.boxgrid {   
+    width: 194px;   
+    height: 215px;   
+    overflow: hidden;   
+    position: relative; 
+	text-align: center;
+	margin: 0 auto;
+	display:inline-flex
+}  
+.boxgrid img{   
+    position: absolute;   
+    top: 0;   
+    left: 0;  
+}  
+.boxgrid p{   
+	margin:35px 0 0 0 !important;
+	text-align:center;  
+	 font-size:14px;
+	 color: #fff;
+	 line-height:1.4;
+}  
+ 
+.boxgrid strong{   
+	 font-size:13px !important;
+	 color:#E2632D;
+	 line-height:2.0;
+	 }  
+      
+      
+.boxgrid a{   
+    color: #fff;
+	text-decoration:none;
+	
+}  	  
+.boxcaption{   
+    float: left;   
+    position: absolute;
+    background: #000;   
+    height: 223px;   
+    width: 100%;   
+    opacity: 1;   
+    /* For IE 5-7 */  
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);  
+    /* For IE 8 */  
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  
+}  
+.captionfull .boxcaption {  
+    top: 100px;  
+    left: 0;  
+}  
+.caption .boxcaption {  
+    top: 100px;  
+    left: 0;  
+}
+
+.og_caption {
+	margin:10px 60px 20px;
+	color:#555;
+	font-size:12px;
+}

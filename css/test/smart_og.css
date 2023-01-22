@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*SHOPLIST*/
+#shoplist {
+	padding:0px 34px;
+}
+
+.boxgrid    {   
+    width: 194px;   
+    height: 215px;   
+    overflow: hidden;   
+    position: relative; 
+	margin: 0 auto;
+	
+}  
+.boxgrid img{   
+    position: absolute;   
+    top: 0;   
+    left: 0;  
+}  
+.boxgrid p{   
+	margin:35px 0 0 0 !important;
+	text-align:center;  
+	 font-size:14px;
+	 color: #fff;
+	 line-height:1.4;
+}  
+ 
+.boxgrid strong{   
+	 font-size:13px !important;
+	 color:#E2632D;
+	 line-height:2.0;
+	 }  
+      
+      
+.boxgrid a{   
+    color: #fff;
+	text-decoration:none;
+	
+}  	  
+.boxcaption{   
+    float: left;   
+    position: absolute;
+    background: #000;   
+    height: 223px;   
+    width: 100%;   
+    opacity: 1;   
+    /* For IE 5-7 */  
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);  
+    /* For IE 8 */  
+    -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  
+}  
+.captionfull .boxcaption {  
+    top: 100px;  
+    left: 0;  
+}  
+.caption .boxcaption {  
+    top: 100px;  
+    left: 0;  
+}
+
+.og_caption {
+	margin:10px 60px 20px;
+	color:#555;
+	font-size:12px;
+}

@@ -1,0 +1,831 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ↓升成健心が書いたcss↓ */
+
+.bg-orange1 {
+	background-color:#EA5520;
+}
+
+.color-orange {
+	color:#EA5520;
+}
+/*メニュー*/
+
+@media (min-width:1001px) {
+
+.map-width {
+	margin: 10px 50px 10px 50px;
+}
+
+.top-space {
+	width: 100%;
+	height:70px;
+	position: relative;
+	z-index: 100;
+}
+
+.space {
+	width: 100%;
+	height:70px;
+	background-color: black;
+	position: fixed;
+	z-index: 100;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    z-index: 110;
+    background-color:rgb(255, 72, 0);
+    opacity: 0.8;
+}
+.menu-btn:hover {
+    opacity: 0.4;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-content {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 100;
+    background-image: linear-gradient(#F06C29, #000000);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+
+}
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+    
+.map-width {
+	margin: 10px 20px 10px 20px;
+}
+
+.mini-font {
+	font-size: 13px;
+}
+
+.space {
+	width: 100%;
+	height:60px;
+	background-color: black;
+	position: fixed;
+	z-index: 100;
+}
+	
+.top-space {
+	width: 100%;
+	height:60px;
+	position: relative;
+	z-index: 100;
+}
+
+    .menu-btn {
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        height: 45px;
+        width: 45px;
+        justify-content: center;
+        align-items: center;
+        z-index: 110;
+        background-color:rgb(255, 72, 0);
+        opacity: 0.8;
+    }
+.menu-btn:hover {
+    opacity: 0.4;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 100;
+    background-image: linear-gradient(#F06C29, #000000);
+    transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}
+}
+/*メニュー*/
+
+
+
+
+
+
+
+
+
+/* メイン */
+html {
+	overflow-x: hidden;
+	overflow-y: scroll; 
+	-webkit-overflow-scrolling: touch;
+	}
+
+  
+  .none {
+	text-decoration: none;
+  }
+  
+  .hover {
+	opacity: 1;
+  }
+  .hover:hover {
+	opacity: 0.5;
+	text-decoration: none;
+  }
+
+  
+  
+  
+  
+	/*レスポンシブ対応*/
+	
+	@media (min-width: 850px) {
+
+		.map-size {
+			height: 350px;
+		  }
+
+		#campaign_a {
+			background: url(img/campaign_a_back.png) no-repeat center;
+			width: 714px;
+			height: 482px;
+			margin: 0 auto 16px;
+		}
+		#campaign_a p {
+			position: relative;
+			top: 409px;
+			left: 86px
+		}
+		#campaign_b {
+			background: url(img/campaign_b_back.png) no-repeat center;
+			width: 714px;
+			height: 460px;
+			margin: 0 auto 16px;
+		}
+		#campaign_c {
+			background: url(img/campaign_c_back.png) no-repeat center;
+			width: 714px;
+			height: 460px;
+			margin: 0 auto 16px;
+		}
+		#campaign_b p {
+			position: relative;
+			top: 387px;
+			left: 86px
+		}
+		
+		#campaign_c p {
+			position: relative;
+			top: 387px;
+			left: 86px
+		}
+		#a,#b,#c {
+			margin-top: -86px;
+			padding-top: 86px;
+		}
+
+		.car-photo {
+			text-align: center;
+		}
+
+		.card-card {
+			width: 300px;
+			border-radius: 20px;
+			text-align: center;
+		}
+  
+	  .small {
+		display: none;
+	  }
+	  
+	
+	  .half {
+		  display: block;
+		  width:100%;
+	  }
+	
+	  .parent {
+		  display: flex;
+		}
+  
+  
+	  .service-img {
+		width: 100%;
+		height: 400px;
+	  }
+  
+	.font-size-1 {
+	  font-size: 60px;
+	}
+  
+	.font-size-2 {
+	  font-size: 30px;
+	  margin-bottom: 0;
+	}
+	
+	
+	}
+	
+	@media (max-width:849px) {
+
+		.map-size {
+			height: 200px;
+		  }
+
+		#campaign_a {
+			background: url(img/campaign_a_back.png) no-repeat center;
+			width: 714px;
+			height: 482px;
+			margin: 0 auto 16px;
+		}
+		#campaign_a p {
+			position: relative;
+			top: 409px;
+			left: 86px
+		}
+		#campaign_b {
+			background: url(img/campaign_b_back.png) no-repeat center;
+			width: 357px;
+			height: 230px;
+			margin: 0 auto 16px;
+		}
+		#campaign_c {
+			background: url(img/campaign_c_back.png) no-repeat center;
+			width: 357px;
+			height: 230px;
+			margin: 0 auto 16px;
+		}
+		#campaign_b p {
+			position: relative;
+			top: 387px;
+			left: 86px
+		}
+		
+		#campaign_c p {
+			position: relative;
+			top: 387px;
+			left: 86px
+		}
+		#a,#b,#c {
+			margin-top: -86px;
+			padding-top: 86px;
+		}
+
+		.car-photo {
+			text-align: center;
+			width: 100%;
+		}
+
+		.card-card {
+			width: 300px;
+			border-radius: 20px;
+			text-align: center;
+		}
+
+	.shop-img {
+		width: 150px;
+	}
+
+
+	  .big {
+		display:none;
+	  }
+	  
+	
+	  .half {
+		  width:100%;
+	  }
+	
+	  .parent {
+		  display: block;
+		}
+  
+		.service-img {
+		  width: 100%;
+		}
+	
+		.font-size-1 {
+		  font-size: 40px;
+		}
+  
+		.font-size-2 {
+		  font-size: 20px;
+		  margin-bottom: 0;
+		}
+	}
+	
+	/*レスポンシブ対応*/
+	
+
+
+
+  .answer .btn {
+	position: relative;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid black;
+	font-weight: 600;
+	padding: 10px 40px;
+	margin: 10px auto;
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	color: black;
+	text-decoration: none !important;
+  }
+  
+  .answer .btn.float:hover {
+	background-color: black;
+	color: white;
+	-webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .answer .btn.filled {
+	background-color: black;
+	color: white;
+	-webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .answer .btn.filled:hover {
+	background-color: white;
+	color: black;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  }
+  
+  .answer .btn.letter-spacing:hover {
+	background-color: black;
+	letter-spacing: 3px;
+	color: white;
+  }
+  
+  .answer .btn.shadow {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+  }
+  
+  .answer .btn.shadow:hover {
+	-webkit-transform: translate(-2.5px, -2.5px);
+	transform: translate(-2.5px, -2.5px);
+	-webkit-box-shadow: 5px 5px 0 0 black;
+	box-shadow: 5px 5px 0 0 black;
+  }
+  
+  .answer .btn.solid {
+	-webkit-box-shadow: 2px 2px 0 0 black;
+	box-shadow: 2px 2px 0 0 black;
+	border-radius: 7px;
+  }
+  
+  .answer .btn.solid:hover {
+	-webkit-transform: translate(2px, 2px);
+	transform: translate(2px, 2px);
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  }
+  
+  .color-orange {
+	color: #F06C29;
+  }
+  
+  .bg-orange {
+	background-image: linear-gradient(#F06C29, #000000);
+  }
+  
+  .background-news {
+	background-color: #f98d58;
+  }
+  
+  li {
+	list-style:none;
+	margin:0;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .q-box label {
+	cursor: pointer;
+  }
+  
+	.a-box {
+	  border-radius: 0;
+	  text-align: center;
+	}
+  
+	.a-box_font {
+	  display: flex;
+	  align-items: flex-start;
+	}
+  
+	.q-font {
+	  background-color: white;
+	  padding: 10px 10px;
+	  border-radius: 0;
+	  text-align: center;
+	  margin: 5px 0;
+	}
+  
+	.q-font:after {
+	  content: '>';
+	  float: right;
+	  transform: rotate(90deg);
+	  color: #F06C29;
+	}
+  
+	.a-font {
+	  line-height: 1;
+	}
+  
+	.q-box input {
+	  display: none;
+	}
+  
+	.q-box .a-box {
+	  height: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  opacity: 0;    
+	  transition: 0.5s;
+	}
+  
+	.q-box input:checked ~ .a-box {
+	  padding: 10px 30px;
+	  height: auto;
+	  opacity: 1;
+	}
+
+/* メイン */
+
+
+
+
+/* レスポンシブ */
+
+@media (min-width:801px) {
+
+
+	.logo-size {
+	  width:200px;
+	}
+	
+	
+	  .top-img {
+		margin-top: 0;
+		padding-top: 70px;
+		padding-bottom: 70px;
+		margin:0 auto;
+		height: auto;
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	
+	  .news-box {
+		width: 70%;
+	  }
+		.br {
+		  display: none;
+		}
+	
+	  .yoko {
+		display: inline-flex;
+
+	  }
+	}
+	
+	
+	
+	@media (max-width:800px) {
+	
+	
+	.logo-size {
+	  width:120px;
+	}
+	
+	
+	  .top-img {
+		margin-top: 0;
+		padding-top: 70px;
+		padding-bottom:70px;
+		margin:0 auto;
+		height: auto;
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+	
+	  .news-box {
+		width: 80%;
+	  }
+	  
+	.br {
+	  display: flex;
+	}
+	
+	.size {
+	  width: 200px;
+	}
+	
+	.yoko {
+	  display: block;
+	}
+	
+	.company-p {
+	  font-size: 12px;
+	  margin: 10px;
+	}
+	.company-box {
+	  width: 150px;
+	}
+	
+	.transform-small {
+	  width: 150px;
+	}
+	
+	}
+/* レスポンシブ */
+
+
+/* ↑升成健心が書いたcss↑ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+	font-size:12px;
+	color:#333;
+	font-weight:normal;
+	line-height: 2.3;
+	margin:0px 20px 20px;
+	padding-bottom:5px;
+	border-bottom:1px solid #f06c29;
+}
+
+h2 span {
+	color:#F06B29;
+}
+hr {
+	border: 0;
+    height: 1px;
+    background:#9B9B9B;
+	margin:0 auto;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+.clearfix {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+a {
+	color: #0066cb;
+	text-decoration:none;
+}
+
+a img {
+box-shadow: #000 0 0 0;
+}
+
+a:link {
+	color: #0066cb;
+}
+a:visited {
+	color: #0066cb;
+}
+a:active {
+	color: #3399CC;
+}
+a:hover {
+	color: #3399CC;
+}
+
+li{list-style:none}
+
+input {
+	vertical-align: baseline;
+}
+img {
+	border-style: none;
+	vertical-align: bottom;
+	box-shadow: #000 0 0 0;
+}
+#wback {
+	padding: 73px 0 10px 0;
+	width: 100%;
+	background: #FFF;
+}
+#wrapper {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+
+
+ /*メイン*/
+  
+ 
+ #fadein {
+	 margin-bottom:20px;
+ }
+ 
